@@ -11,6 +11,7 @@ body{
     background: url('./img/bgimage.jpg') no-repeat center fixed;
     background-size: cover;
     display: grid;
+    font-size: 2.2vh;
 }
 
 #content{
@@ -68,12 +69,14 @@ h1{
 .info img{
     height: 35em;
     width: 25em;
+    align-self: center;
 }
 
 .info .text{
     color: white;
     font-size: 1.3em;
     font-family: 'Joan', sans-serif;
+    align-self: center;
 }
 
 /*Menu page style*/
