@@ -54,6 +54,7 @@ h1{
     font-family: 'Butter';
 }
 
+/*Home page*/
 .info{
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
@@ -65,8 +66,8 @@ h1{
 }
 
 .info img{
-    height: 100%;
-    width: 40%;
+    height: 35em;
+    width: 25em;
 }
 
 .info .text{
@@ -75,6 +76,7 @@ h1{
     font-family: 'Joan', sans-serif;
 }
 
+/*Menu page style*/
 .infoMenu{
     background-color: rgba(0, 0, 0, 0.5);
     height: 100%;
@@ -86,7 +88,63 @@ h1{
     gap: 2em;
 }
 
+.infoMenu div{
+    display: grid;
+    grid-template-columns: max-content 1fr;
+}
+
+.infoMenu div div{
+    color: white;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-self: center;
+    align-self: center;
+}
+
+.infoMenu h3{
+    font-size: 1.7em;
+    margin: 0;
+}
+
+.infoMenu p{
+    font-size: 1.3em;
+    margin: 0.1em;
+}
+
 .infoMenu img{
     height: 180px;
     width: 180px;
+}
+
+/*Contact page style*/
+.infoContact{
+    display: grid;
+    grid-template-columns: 1fr 1fr;
+    grid-template-rows: max-content 1fr;
+    background-color: rgba(0, 0, 0, 0.5);
+    height: 100%;
+    box-shadow: 1px 1px 5px black;
+    padding: 30px;  
+}
+
+.infoContact h1{
+    grid-area: 1 / 1 / 2 / 3;
+    font-size: 2.0em;
+    text-align: center;
+    font-family: 'Joan', sans-serif;
+}
+
+.infoContact div{
+    color: white;
+    align-self: center;
+    justify-self: center;
+}
+
+.infoContact h3{
+    font-size: 1.8em;
+}
+
+.infoContact p{
+    font-size: 1.3em;
 }

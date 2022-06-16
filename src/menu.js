@@ -1,4 +1,4 @@
-import {bakeryName, btnsContent, textHead, text1, text2} from "./textsrc";
+import {foodNames, foodPrices} from "./textsrc";
 import './style.css';
 import croissant from "./img/croissant.jpg";
 import pateachoux from "./img/pateachoux.jpg";
@@ -20,8 +20,19 @@ function loadMenu(){
     {
         let food = document.createElement('div');
         let img = document.createElement('img');
+        let name = document.createElement('h3');
+        let price = document.createElement('p');
+        let foodInfo = document.createElement('div');
+
+        price.textContent = foodPrices[i];
+        name.textContent = foodNames[i];
         img.src = options[i];
+
+
         food.appendChild(img);
+        foodInfo.appendChild(name);
+        foodInfo.appendChild(price);
+        food.appendChild(foodInfo);
         info.appendChild(food);
     }
 

@@ -1,4 +1,4 @@
-import {bakeryName, btnsContent, textHead, text1, text2} from './textsrc.js';
+import {textHead, text1, text2} from './textsrc.js';
 import firstImage from '../src/img/aboutimg.jpg';
 import './style.css';
 
